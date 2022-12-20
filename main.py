@@ -17,7 +17,22 @@ def montar(n):
     lista.sort(reverse=False)
     volante.append(lista)
 
+resultado = [4,23,44,12,56,60]
+def conferir(jogo):
+    acertos = 0
+    for i in jogo:
+        if i in resultado:
+            acertos += 1
+    if acertos >= 4:
+        print("###################")
+    acertos = 0
 
 if __name__ == '__main__':
-    montar(6)
-    print(volante)
+    volante.append([4, 23, 44, 12, 56, 60])
+    for i in range(2332):
+        montar(6)
+    #print(volante)
+    #print(len(volante))
+    for i in volante:
+        print(i)
+        conferir(i)
